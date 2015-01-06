@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)resetColour:(id)sender;
+- (IBAction)sliderUpdate:(id)sender;
 
 @end
 
@@ -24,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)resetColour:(id)sender {
+}
+
+- (IBAction)sliderUpdate:(id)sender {
+}
 @end
