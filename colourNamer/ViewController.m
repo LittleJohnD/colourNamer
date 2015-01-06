@@ -29,9 +29,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)resetColour:(id)sender {
+-(UIColor *) calcColor{
+    return [UIColor colorWithRed: self.redSlider.value green: self.greenSlider.value
+                            blue: self.blueSlider.value alpha: 1.0 ];
 }
 
-- (IBAction)sliderUpdate:(id)sender {
+-(void) colorMyView{ // local method called by other two methods
+    UIView *myView = [self view];
+    myView.backgroundColor = [self calcColor];
+}
+
+- (IBAction)resetColour:(id)sender {
+    self.redSlider.value = 0.5;
+    self.blueSlider.value = 0.5;
+    self.greenSlider.value = 0.5;
+    [self colorMyView];
+    self.colourLabel.text = @"Mid-Gray";
+}
+
+- (IBAction)sliderUpdate:(id)sender { [self colorMyView]; self.colourLabel.text = @"Unknown";
 }
 @end
