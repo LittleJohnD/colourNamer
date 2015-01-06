@@ -78,10 +78,10 @@
             </objects>
             <point key="canvasLocation" x="438" y="981"/>
         </scene>
-        <!--View Controller-->
+        <!--Colour Namer-->
         <scene sceneID="0hB-VO-jnu">
             <objects>
-                <viewController id="aLD-jc-vN2" sceneMemberID="viewController">
+                <viewController id="aLD-jc-vN2" customClass="ColourNamer" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vox-Qo-ewG"/>
                         <viewControllerLayoutGuide type="bottom" id="egn-65-EpK"/>

@@ -15,6 +15,7 @@
 		DB00B39D1A5C1E34008C4AB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB00B39C1A5C1E34008C4AB8 /* Images.xcassets */; };
 		DB00B3A01A5C1E34008C4AB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB00B39E1A5C1E34008C4AB8 /* LaunchScreen.xib */; };
 		DB00B3AC1A5C1E34008C4AB8 /* colourNamerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB00B3AB1A5C1E34008C4AB8 /* colourNamerTests.m */; };
+		DB00B3D11A5C2FA9008C4AB8 /* ColourNamer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB00B3D01A5C2FA9008C4AB8 /* ColourNamer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		DB00B3A51A5C1E34008C4AB8 /* colourNamerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = colourNamerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB00B3AA1A5C1E34008C4AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB00B3AB1A5C1E34008C4AB8 /* colourNamerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = colourNamerTests.m; sourceTree = "<group>"; };
+		DB00B3CF1A5C2FA9008C4AB8 /* ColourNamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColourNamer.h; sourceTree = "<group>"; };
+		DB00B3D01A5C2FA9008C4AB8 /* ColourNamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColourNamer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 		DB00B3801A5C1E33008C4AB8 = {
 			isa = PBXGroup;
 			children = (
+				DB00B3CF1A5C2FA9008C4AB8 /* ColourNamer.h */,
+				DB00B3D01A5C2FA9008C4AB8 /* ColourNamer.m */,
 				DB00B38B1A5C1E33008C4AB8 /* colourNamer */,
 				DB00B3A81A5C1E34008C4AB8 /* colourNamerTests */,
 				DB00B38A1A5C1E33008C4AB8 /* Products */,
@@ -224,6 +229,7 @@
 			files = (
 				DB00B3921A5C1E33008C4AB8 /* AppDelegate.m in Sources */,
 				DB00B38F1A5C1E33008C4AB8 /* main.m in Sources */,
+				DB00B3D11A5C2FA9008C4AB8 /* ColourNamer.m in Sources */,
 				DB00B3981A5C1E33008C4AB8 /* ViewController.m in Sources */,
 				DB00B3951A5C1E33008C4AB8 /* colourNamer.xcdatamodeld in Sources */,
 			);
@@ -418,6 +424,7 @@
 				DB00B3B11A5C1E34008C4AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB00B3B21A5C1E34008C4AB8 /* Build configuration list for PBXNativeTarget "colourNamerTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				DB00B3B41A5C1E34008C4AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
