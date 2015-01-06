@@ -26,10 +26,16 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aGz-Wk-PMn">
                                 <rect key="frame" x="84" y="159" width="196" height="31"/>
                                 <color key="thumbTintColor" red="0.0" green="1" blue="0.028106128130943375" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sliderUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="7zv-X3-6Il"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="e9R-TV-vio">
                                 <rect key="frame" x="84" y="228" width="196" height="31"/>
                                 <color key="thumbTintColor" red="0.0" green="0.15059188164578163" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sliderUpdate:" destination="BYZ-38-t0r" eventType="valueChanged" id="eQn-bZ-8o8"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnv-bc-1Gp">
                                 <rect key="frame" x="106" y="296" width="153" height="30"/>
