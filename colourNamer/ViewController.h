@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
+-(UIColor *) calcColor; // Returns UIColor from values of sliders
+@property (weak, nonatomic) IBOutlet UILabel *colourLabel;
 
 @end
 

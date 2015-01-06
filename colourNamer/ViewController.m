@@ -11,6 +11,9 @@
 @interface ViewController ()
 - (IBAction)resetColour:(id)sender;
 - (IBAction)sliderUpdate:(id)sender;
+@property (weak, nonatomic) IBOutlet UISlider *redSlider;
+@property (weak, nonatomic) IBOutlet UISlider *greenSlider;
+@property (weak, nonatomic) IBOutlet UISlider *blueSlider;
 
 @end
 
