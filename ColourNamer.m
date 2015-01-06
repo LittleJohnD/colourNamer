@@ -9,7 +9,7 @@
 #import "ColourNamer.h"
 
 @interface ColourNamer ()
-
+@property (weak, nonatomic) IBOutlet UITextField *colourName;
 @end
 
 @implementation ColourNamer
@@ -17,11 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIView *myView = [self view];
+    myView.backgroundColor = [self.parent calcColor];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(BOOL) textFieldShouldReturn: (UITextField *) textField{
+    [self.colourName resignFirstResponder];
+    [self.parent.colourLabel setText: self.colourName.text];
+    printf("Colour is: %s\n",[self.colourName.text UTF8String]);
+    [self dismissViewControllerAnimated: YES completion: nil];
+    return YES;
 }
 
 /*

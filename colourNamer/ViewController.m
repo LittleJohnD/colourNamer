@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ColourNamer.h"
 
 @interface ViewController ()
 - (IBAction)resetColour:(id)sender;
@@ -49,4 +50,12 @@
 
 - (IBAction)sliderUpdate:(id)sender { [self colorMyView]; self.colourLabel.text = @"Unknown";
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    ColourNamer *newColourNamer = segue.destinationViewController;
+    newColourNamer.parent = self;
+}
+
 @end

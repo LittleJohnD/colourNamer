@@ -100,10 +100,16 @@
                                 <rect key="frame" x="52" y="134" width="201" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="aLD-jc-vN2" id="gQ8-bT-eOm"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.46674896551156952" green="1" blue="0.98138414899175219" alpha="0.69000000000000006" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="colourName" destination="Nnp-ea-Ysi" id="gcm-EI-GFD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fA-ZG-jeV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
